@@ -3,14 +3,15 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import Resume from './components/Resume'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 const projects = [
-  { title: 'Awesome App', desc: 'A React app', url: 'https://github.com/youruser/awesome-app', demoUrl: 'https://www.youtube.com/watch?v=demo-video-id' },
-  { title: 'Library', desc: 'Reusable components', url: 'https://github.com/youruser/library', demoUrl: 'https://www.youtube.com/watch?v=library-demo-id' },
-  { title: 'Portfolio Website', desc: 'Personal portfolio built with React', url: 'https://github.com/youruser/portfolio', demoUrl: 'https://youruser.vercel.app' },
-  { title: 'Task Manager', desc: 'Full-stack task management app', url: 'https://github.com/youruser/task-manager', demoUrl: 'https://www.youtube.com/watch?v=task-demo-id' }
+  { title: 'Awesome App', desc: 'A React app', url: 'https://github.com/youruser/awesome-app', demoUrl: 'https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing' },
+  { title: 'Library', desc: 'Reusable components', url: 'https://github.com/youruser/library', demoUrl: 'https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing' },
+  { title: 'Portfolio Website', desc: 'Personal portfolio built with React', url: 'https://github.com/youruser/portfolio', demoUrl: 'https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing' },
+  { title: 'Task Manager', desc: 'Full-stack task management app', url: 'https://github.com/youruser/task-manager', demoUrl: 'https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing' },
 ]
 
 const social = {
