@@ -6,21 +6,12 @@ import twitterIcon from '../assets/twitter-icon.svg'
 export default function Contact({ social }) {
 
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="section contact">
       <div className="container">
-        <h2>Contact</h2>
-        <p>If you'd like to work together, email me at <a href="mailto:you@example.com">akshdalsaniya0711@gmail.com</a> or use the links below.</p>
-        <div className="social-row">
-          <a href={social.github} target="_blank" rel="noreferrer">
-            <img src={githubIcon} alt="GitHub" />
-          </a>
-          <a href={social.linkedin} target="_blank" rel="noreferrer">
-            <img src={linkedinIcon} alt="LinkedIn" />
-          </a>
-          <a href={social.twitter} target="_blank" rel="noreferrer">
-            <img src={twitterIcon} alt="Twitter" />
-          </a>
-        </div>
+        <h2 className="section-title">Get In Touch</h2>
+        <p>I'm currently open to new opportunities. If you have a project in mind or just want to say hi, feel free to reach out.</p>
+        <a href="mailto:akshdalsaniya0711@gmail.com" className="btn">Say Hello</a>
+        
         <form className="contact-form" action="https://formspree.io/f/xvgwlavd" method="POST">
           <div className="form-group">
             <label htmlFor="name">Name</label>

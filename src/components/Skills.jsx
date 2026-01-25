@@ -20,23 +20,17 @@ export default function Skills() {
   const skills = activeTab === 'frontend' ? frontendSkills : backendSkills
 
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="section skills">
       <div className="container">
-        <h2>Skills</h2>
+        <h2 className="section-title">Skills</h2>
         <div className="tabs">
           <button className={activeTab === 'frontend' ? 'active' : ''} onClick={() => setActiveTab('frontend')}>Frontend</button>
           <button className={activeTab === 'backend' ? 'active' : ''} onClick={() => setActiveTab('backend')}>Backend</button>
         </div>
-        <div className="skill-list">
+        <div className="skills-grid">
           {skills.map((s) => (
-            <div key={s.name} className="skill">
-              <div className="skill-head">
-                <strong>{s.name}</strong>
-                <span>{s.level}%</span>
-              </div>
-              <div className="bar">
-                <div className="fill" style={{ width: `${s.level}%` }} />
-              </div>
+            <div key={s.name} className="skill-item">
+                <span>{s.name}</span>
             </div>
           ))}
         </div>

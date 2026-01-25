@@ -2,16 +2,15 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Projects from './components/Projects'
+import About from './components/About'
 import Skills from './components/Skills'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 const projects = [
-  { title: 'Awesome App', desc: 'A React app', url: 'https://github.com/youruser/awesome-app', demoUrl: 'https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing' },
-  { title: 'Library', desc: 'Reusable components', url: 'https://github.com/youruser/library', demoUrl: 'https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing' },
-  { title: 'Portfolio Website', desc: 'Personal portfolio built with React', url: 'https://github.com/youruser/portfolio', demoUrl: 'https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing' },
-  { title: 'Task Manager', desc: 'Full-stack task management app', url: 'https://github.com/youruser/task-manager', demoUrl: 'https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing' },
+  { title: 'Medicine Recommendation system', desc: 'A python web-app ', url: 'https://github.com/aksh0711/Medicine-Recommendation-System', demoUrl: 'https://drive.google.com/file/d/1RGoocfzcdosW9QMBDU_BSpoe70HRp_uy/view?usp=drive_link' },
+  { title: 'AI powered finance advisor chatbot ', desc: 'A .net core web-app', url: 'https://github.com/aksh0711/AI---Powered-Personal-Finance-Advisor-Chatbot', demoUrl: 'https://drive.google.com/file/d/1cn0vJURLW3MO-ssScms2sAo-tUUZw3KG/view?usp=drive_link' },
 ]
 
 const social = {
@@ -27,6 +26,7 @@ export default function App() {
       <Navbar social={social} />
       <main>
         <Hero social={social} />
+        <About />
         <Projects projects={projects} />
         <Skills />
         <Contact social={social} />
