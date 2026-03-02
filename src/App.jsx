@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 const projects = [
   { title: 'Medicine Recommendation system', desc: 'A python web-app ', url: 'https://github.com/aksh0711/Medicine-Recommendation-System', demoUrl: 'https://drive.google.com/file/d/1RGoocfzcdosW9QMBDU_BSpoe70HRp_uy/view?usp=drive_link' },
   { title: 'AI powered finance advisor chatbot ', desc: 'A .net core Web Application', url: 'https://github.com/aksh0711/AI---Powered-Personal-Finance-Advisor-Chatbot', demoUrl: 'https://drive.google.com/file/d/1cn0vJURLW3MO-ssScms2sAo-tUUZw3KG/view?usp=drive_link' },
-  { title: 'Healthcare Management System', desc: 'A .net Core Web Application', url: 'https://github.com/aksh0711/HealthcareManagementSystem', demoUrl: 'https://drive.google.com/file/d/1X8c3f2J5Q4v9k8l7m6n5o4p3q2r1s0t/view?usp=drive_link' }
+  { title: 'Healthcare Management System', desc: 'A .net Core Web Application', url: 'https://github.com/aksh0711/HealthcareManagementSystem', demoUrl: 'https://drive.google.com/file/d/15-5-yGAcAb2LWvAAGm37r7erGUeKrtDo/view?usp=drive_linkc ' }
   
 ]
 
