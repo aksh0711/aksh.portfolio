@@ -11,7 +11,6 @@ const backendSkills = [
   { name: 'c#', level: 75 },
   { name: 'Express', level: 70 },
   { name: 'MongoDB', level: 65 },
-  { name: 'Python', level: 60 },
   { name: 'SQL', level: 70 }
 ]
 

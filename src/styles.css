@@ -319,21 +319,25 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 140px));
   gap: 24px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  place-items: center;
 }
 
 .skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   padding: 20px;
   background: var(--bg);
   border-radius: var(--border-radius);
   transition: var(--transition);
+  width: 90px;
+  height: 70px;
 }
 
 .skill-item:hover {
@@ -347,8 +351,16 @@ body {
   color: var(--accent);
 }
 
-.skill-item span {
+.skill-name {
+  font-weight: 600;
+  font-size: 1rem;
+
+}
+
+.skill-level {
   font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--accent);
 }
 
 .contact {
