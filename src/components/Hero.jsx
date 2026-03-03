@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from '../assets/aksh.jpg'
+import avatar from '../assets/AD1.jpeg'
 
 const GitHubIcon = (props) => (
     <svg {...props} viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
