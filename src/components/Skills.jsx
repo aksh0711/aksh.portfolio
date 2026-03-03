@@ -26,10 +26,14 @@ export default function Skills() {
           <button className={activeTab === 'frontend' ? 'active' : ''} onClick={() => setActiveTab('frontend')}>Frontend</button>
           <button className={activeTab === 'backend' ? 'active' : ''} onClick={() => setActiveTab('backend')}>Backend</button>
         </div>
-        <div className="skills-grid">
+        <div className="skills-list">
           {skills.map((s) => (
             <div key={s.name} className="skill-item">
                 <span>{s.name}</span>
+                <div className="skill-bar">
+                  <div className="skill-progress" style={{ width: `${s.level}%` }}></div>
+                </div>
+                <span className="skill-level">{s.level}%</span>
             </div>
           ))}
         </div>

@@ -8,7 +8,7 @@ export default function Projects({ projects }) {
         <div className="grid">
           {projects.map((p, i) => (
             <article key={i} className="card">
-              <img src={`https://picsum.photos/seed/${p.title}/400/200`} alt={p.title} className="project-img" />
+              <img src={p.imgUrl || "src/assets/project-placeholder.svg"} alt={p.title} className="project-img" />
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
               <div className="project-buttons">
