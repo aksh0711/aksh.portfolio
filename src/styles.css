@@ -332,6 +332,88 @@ body {
   color: var(--accent);
 }
 
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: var(--card);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideUp 0.3s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.modal-content p {
+  color: var(--muted);
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--muted);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.modal-close:hover {
+  color: var(--text);
+  transform: scale(1.2);
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.modal-buttons a {
+  flex: 1;
+  text-align: center;
+}
+
 .skills-list {
   display: flex;
   flex-direction: column;
@@ -692,5 +774,28 @@ body {
   
   .project-img {
     aspect-ratio: 16 / 9;
+  }
+
+  .modal-overlay {
+    padding: 16px;
+  }
+
+  .modal-content {
+    max-width: 90vw;
+    padding: 30px;
+  }
+
+  .modal-close {
+    font-size: 28px;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .modal-buttons a,
+  .modal-buttons button {
+    width: 100%;
   }
 }
